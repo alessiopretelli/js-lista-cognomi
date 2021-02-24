@@ -1,4 +1,4 @@
-var cognomi = ["pretelli", "zannelli", "zingoni", "gaini", "lupi"];
+var cognomi = ["zini", "bini", "pretelli", "zannelli", "zingoni", "gaini", "lupi"];
 var cognomi_due;
 
 cognomi.push(prompt("Inserisci il tuo cognome all'elenco, inserisci solo lettere minuscole."));
@@ -13,7 +13,21 @@ var nuovo_utente = cognomi[num_utenti - 1];
 
 cognomi_due = cognomi;
 
-cognomi_due.sort();
+//Funzione per ordine alfabetico//
+
+for (i = 0; i < cognomi_due.length; i++) {
+
+    for (ii = i + 1; ii < cognomi_due.length; ii++) { 
+        
+        if (cognomi_due[i] > cognomi_due[ii]) {
+            var r = cognomi_due[ii];
+            cognomi_due[ii] = cognomi_due[i];
+            cognomi_due[i] = r;
+        }
+
+    }
+
+}
 
 for (i = 0; i < cognomi_due.length; i++) {
     document.getElementById("lista").innerHTML += "<li>" + cognomi_due[i] + "</li>";
