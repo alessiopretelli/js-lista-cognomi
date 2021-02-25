@@ -33,3 +33,30 @@ for (i = 0; i < cognomi_due.length; i++) {
     } 
 
 }
+
+//funzione per ordinamento valori numerici//
+/*
+const num = [];
+const num_num = prompt("Quanti numeri vuoi inserire?");
+
+for (i = 0; i < num_num; i++) {
+    num.push(prompt("Inserisci un numero.") * 1); // inserendo "* 1" il prompt aggiunge un valore numerico e non una stringa//
+    console.log(num[i]);
+}
+
+for (i = 0; i < num.length; i++) {
+
+    for (ii = i + 1; ii < num.length; ii++) { 
+        
+        if (num[i] > num[ii]) {
+            const r = num[ii];
+            num[ii] = num[i];
+            num[i] = r;
+        }
+
+    }
+
+}
+
+console.log(num);
+*/
